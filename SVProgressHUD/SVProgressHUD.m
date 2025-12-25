@@ -517,7 +517,7 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
         } else {
 #if !defined(SV_APP_EXTENSIONS)
             UIWindow *window = self.frontWindow;
-            if (window.rootViewController) {
+            if (window && window.rootViewController) {
                 [window addSubview:self.controlView];
             }
 #else
